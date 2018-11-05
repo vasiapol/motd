@@ -1,0 +1,26 @@
+**************************************************************************************************************
+
+
+	<% if @operatingsystem != "CentOS" %>
+    	   ********	Please change your OS to CentOS <%= @operatingsystemrelease %> <%= @architecture %>    *****
+	<% else %> 
+    	   ********	You are using CentOS <%= @operatingsystemrelease %> <%= @architecture %>    *****
+	<% end %>
+
+
+	Hostname:         <%= @hostname %>
+	Ip address:       <%= @ipaddress %>	
+	Processor:    	  <%= @processor0 %>			 
+	Processor count:  <%= @processorcount %>		
+	Memory size:	  <%= @memorysize %>			
+	Memory Free:      <%= @memoryfree %>			
+	Kernel:           <%= @kernel %> <%=@kernelversion %>
+	Puppet version:   <%= @puppetversion %>
+	Uptime:           <%= @uptime_hours %> hours
+	Is virtual:       <%= @is_virtual %>
+
+
+	 	<%= @message3 %>	    
+
+
+***************************************************************************************************************
